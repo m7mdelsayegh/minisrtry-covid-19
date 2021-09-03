@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <link rel="stylesheet" href="doc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/ice_screenshot_20210831-025359-removebg-preview.png" type="image/icon type">
+    <title>وزارة الصحه والسكان المصريه - فئات اخري</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="img">
+            <a href="index.html"><img src="imgs/logo-ar.svg" alt=""></a>
+        </div>
+        <div class="tx"> <a href="#fot"><i style="transform: scale(1.2);" class="fas fas fa-phone-square"></i> تواصل
+                معنا</a></div>
+    </div>
+    <div class="header">
+        <div class="img">
+            <img src="imgs/21-57-55-cartoon-professional-hospital-team-doctors-flat-illustration_74855-18725.jpg" alt=""
+                id="img1">
+            <i title="we always here for you" class="fas fa-heart"></i>
+        </div>
+        <h1> تسجيل حساب في منظومة التسجيل للقاح فيروس كورونا المستجد </h1>
+        <p>
+            (غير مسموح بالتسجيل لمن هو دون 18 عاما)
+        </p>
+
+    </div>
+    <div class="pos">
+        <div class="grid">
+            <div class="div1"></div>
+            <div class="num" id="next"> <i class="fas fa-check-double"></i> </div>
+            <div class="div2"></div>
+            <div class="num" id="spec">2</div>
+            <div class="div3"></div>
+            <div class="num">3</div>
+            <div class="div4"></div>
+        </div>
+    </div>
+    <div class="notice">
+        <h1 id="main">ادخل بياناتك الشخصية</h1>
+        <p id="adv">العلامه * تشير الى الحقول الهامة </p>
+    </div>
+    <div class="mainform">
+        <div class="form">
+            <form method="GET" action="finish.html">
+                <label for="name"> الاسم كما هو مدون فى البطاقه الشخصية * </label>
+                <input required type="text" name="name" id="name">
+                <label for="natid">الرقم القومي *</label>
+                <input required type="text" name="natid" id="natid">
+                <label for="lang">لغة التواصل *</label>
+                <select required name="langs" id="lang">
+                    <option value="arabic" id="op1">العربية</option>
+                    <option value="francais">english</option>
+                    <option value="francais" id="op1">francais</option>
+                </select>
+                <label for="con">بلد الجنسية *</label>
+                <select required name="country" id="con">
+                    <option value="egypt" id="op1">مصر</option>
+                    <option value="syria">سوريا</option>
+                    <option value="palastine" id="op1">فلسطين</option>
+                    <option value="jordan">الاردن</option>
+                    <option value="saudi" id="op1">السعوديه</option>
+                    <option value="lybia">ليبيا</option>
+                    <option value="another" id="op1">اخرى</option>
+                </select>
+                <label for="birth">تاريخ الميلاد *</label>
+                <input required type="date" name="birth" id="birth">
+                <label for="gov">المحافظة التى ترغب بالحصول على اللقاح منها *</label>
+                <select required name="gov" id="gov">
+                    <option value="cairo" id="op1">القاهرة</option>
+                    <option value="alexandria">الاسكندريه</option>
+                    <option value="kafrelshekh" id="op1">كفر الشيخ</option>
+                    <option value="bahrahmr">البحر الاحمر</option>
+                    <option value="qalyobia" id="op1">القليوبية</option>
+                    <option value="gharbia">الغربية</option>
+                    <option value="giza" id="op1">الجيزة</option>
+                    <option value="sharqia">الشرقية</option>
+                    <option value="qena" id="op1">قنا</option>
+                    <option value="luxor">الاقصر</option>
+                    <option value="aswan" id="op1">اسوان</option>
+                    <option value="bnisuef">بني سويف</option>
+                    <option value="asyut" id="op1">اسيوط</option>
+                    <option value="menofia">المنوفية</option>
+                    <option value="matrouh" id="op1">مطروح</option>
+                    <option value="boursaed">بور سعيد</option>
+                    <option value="esmaeelliah" id="op1">الاسماعيلية</option>
+                    <option value="suez">السويس</option>
+                    <option value="sinai" id="op1">سيناء</option>
+                </select>
+                <label for="tel">رقم الهاتف *</label>
+                <input required type="text" name="tele" id="tel">
+                <label for="kind">النوع *</label>
+                <select required name="kind" id="kind">
+                    <option value="male">ذكر</option>
+                    <option value="female">انثي</option>
+                </select>
+                <div class="flex">
+                    <input type="checkbox" required name="lala" id="lala">
+                    <label id="lala" for="lala">اقر باني موافق ع تلقي اللقاح</label>
+                </div>
+                <div class="send">
+                    <a href="choose.html"> <button id="bef">السابق</button></a>
+                    <button id="send" type="submit">ارسال</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="fot" class="fot" id="fot">
+        <div class="min"><img src="imgs/WhatsApp Image 2021-09-01 at 11.48.54 PM.jpeg" alt=""></div>
+        <div class="contact">
+            <p>للتواصل معنا ومتابعه اخر التحديثات لفيروس كورونا</p>
+            <p>
+                <a href="https://www.facebook.com/egypt.mohp" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a
+                    href="https://api.whatsapp.com/send?phone=%2B201553105105&fbclid=IwAR2MWEYBIOPiGe2sukV2Cr4zjw94ga067gRiPLSG7-7JjINjOYhdqp-8obc"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://instagram.com/mohpegypt?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
+                <a href="mohp.gov.eg"><i class="fas fa-globe"></i></a>
+            </p>
+            <p> او يمكنك من خلال الخط الساخن <span>15335</span></p>
+        </div>
+    </div>
+    <div class="p1">
+        <p dir="ltr">powered with <i style="color:#df2029;" class="far fa-heart"></i></p>
+    </div>
+</body>
+
+</html>

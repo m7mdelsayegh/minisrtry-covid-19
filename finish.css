@@ -1,0 +1,41 @@
+.div2::before{
+    z-index: 2;
+    background-color:#018a01 ;
+}
+
+.div3::before{
+    z-index: 2;
+    background-color: #0048ff;
+    
+} 
+.div4::before{
+    z-index: 2;
+    background-color: #0048ff;
+}
+.div1::before{
+    z-index: 2;
+}
+.marg{
+    margin-top: -51px;
+    background-color: rgb(250, 250, 250);
+}
+.con{
+    font-size: 20px;
+    padding: 8px;
+    text-align: center;
+    color: #131418;
+    font-weight: 800;
+    margin: auto;
+    width: fit-content;
+}
+.con img{
+    mix-blend-mode: multiply;
+    width: 300px;
+    height: 300px;
+}
+
+.header h1{
+    border: none;
+    font-size: 22px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,338 @@
+*{
+    font-family: 'tajawal',sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    text-transform: capitalize;
+}
+body{
+    line-height: 1.6;
+    word-spacing: 2px;
+}
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: inherit; 
+} 
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+    background-image: linear-gradient(45deg
+, #3001ff,#880e4f, #ff0101f0,#f9a825);
+    z-index: 1000;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.fot{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #131418;
+
+}
+.min{
+    cursor: pointer;
+    width: fit-content;
+    margin-left: 40px;
+}
+.min img{
+    width: 280px;
+    height: 280px;border-radius: 50%;
+}
+.fot p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom:20px ;
+}
+.fot p a{
+    font-size: 28px;
+    margin-left: 20px; 
+
+}
+.fot p span{
+    font-size: 20px;
+    color: rgb(241, 9, 9);
+    padding: 2px;
+}
+.p1{
+    color: white;
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.p1 i{
+    font-size: 18px;
+}  
+@media (max-width:780px) {
+    .nav .img img{
+        width: 200px;
+    }
+    .nav{
+        padding: 3px;
+    }
+    .min img{
+        width: 150px;
+        height: 150px;
+    }
+} 
+.header{
+    padding-top: 20px;
+    padding-bottom:12px ;
+    text-align: center;
+    background-color: #eee;
+}
+.header .img{
+    z-index: 2;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: -60px;
+    border: 7px white solid;
+    border-radius: 50%;
+    width: fit-content;
+    overflow: hidden;
+    height: 120px;
+}
+#img1{
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+}
+.img i{
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    color: #df2029;
+    font-size: 20px;
+    transform: scale(0);
+    transition-duration: 1s;
+    transition-property: transform;
+}
+.img #img1:hover + i{
+    transform: scale(1.5) translateY(30%);
+
+}
+.img i:hover{
+    transform: scale(1.5) translateY(30%);
+}
+
+
+.header h1{
+    border-bottom: 1px solid black;
+    background-color: white;
+    padding: 10px;
+    padding-top: 60px;
+}
+.header p{
+    padding: 20px;
+    font-size: 16px;
+    color: grey;
+}
+
+.pos{
+    bottom: 25px;
+}
+.grid{ 
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    grid-template-rows: repeat(1,1fr);
+    bottom: -50%;
+
+}
+.grid .num {
+    cursor: pointer;
+    background-color: white;
+    font-weight: 500;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    color:rgb(127 127 127) ;
+    border: solid rgb(127 127 127)2px;
+}
+#spec{
+    background-color: #0048ff;
+    color: white;
+    border-color: #0048ff;
+    font-weight: 800;
+}
+.div1::before{
+    grid-column: 1/2;
+    content: "";
+    background-color: #018a01;
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+.div2::before{
+    grid-column: 3/4;
+    content: "";
+    background-color: #0048ff;
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+.div3::before{
+    grid-column: 5/6;
+    content: "";
+    background-color: rgb(127 127 127);
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+} 
+.div4::before{
+    grid-area: 7/8;
+    content: "";
+    background-color: rgb(127 127 127);
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+#next{
+    background-color: #018a01;
+    color: white;
+    border: solid #018a01 2px;
+}
+#main{
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+#adv{
+    text-align: center;
+    color: rgb(107, 107, 107);
+}
+.notice{
+    margin: auto;
+    width: 350px;
+}
+.notice::before{
+    content: "";
+    position: absolute;
+    background-color: #1e88e5;
+    bottom: -8px;
+    font-weight: 400;
+    width: 80px;
+    height: 2px;
+    left: 140px;
+    border-radius: 12px;
+}
+.form{
+    border-radius: 5px;
+    padding: 8px;
+    margin: auto;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    width: 50%;
+    background-color: rgb(250, 250, 250);
+}
+.form label{
+    display: inline-block;
+    
+    width:98%;
+    text-align:center;
+    padding: 2px;
+    color: #131418;
+    font-weight: 700;
+    margin: 10px 0px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+.form input ,select {
+    display: inline-block;
+    font-size: 16px;
+    width: 99%;
+    margin: auto;
+    border-radius: 5px;
+    border: 1.5px solid rgb(134, 134, 134);
+    padding: 6px;
+    outline: none;
+    caret-color: #202020;
+}
+.form input:focus,select:focus{
+    box-shadow: 0px 0px 6px #6a6a6a;
+}
+#op1{
+    background-color: #eee;
+    padding: 4px;
+}
+@media (max-width:780px) {
+    .form{
+        width: 330px;
+    }
+    .form input,select{
+        width: 315px;
+    }
+}
+.flex{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lala{
+    font-size: 14px;
+    margin: 0;
+    width: fit-content;
+    display: inline;
+}
+.send{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.send button{
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+}
+#send{
+    background-color: #0048ff;
+}
+#bef{
+    background-color: rgb(167, 167, 167);
+}
+#dis{
+    
+    display: inline;
+    margin: 0;
+    font-size: 16px;
+width: fit-content;
+}
+.flex1{
+    width: fit-content;
+    margin: auto;
+}
